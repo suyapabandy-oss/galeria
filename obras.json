@@ -1,0 +1,74 @@
+[
+  {
+    "id": "amapola-2001",
+    "titulo": "Amapola",
+    "categoria": "Óleo",
+    "medidas": "25 x 25 cm",
+    "tecnica": "Óleo",
+    "ano": "2001",
+    "imagen": "img/obras/Amapola-25-x-25-Oleo-2001.jpg"
+  },
+  {
+    "id": "flores-blancas-1999",
+    "titulo": "Flores Blancas",
+    "categoria": "Óleo",
+    "medidas": "20 x 16 cm",
+    "tecnica": "Óleo",
+    "ano": "1999",
+    "imagen": "img/obras/Flores-Blancas-20-x-16-Oleo-1999.jpg"
+  },
+  {
+    "id": "bodegon-flores-2005",
+    "titulo": "Bodegón con Flores",
+    "categoria": "Óleo",
+    "medidas": "24 x 18 cm",
+    "tecnica": "Óleo",
+    "ano": "2005",
+    "imagen": "img/obras/Bodegon-con-Flores-24-x-18-Oleo-2005.jpg"
+  },
+  {
+    "id": "cachibaches-2007",
+    "titulo": "Cachibaches Lecheros",
+    "categoria": "Óleo",
+    "medidas": "24 x 20 cm",
+    "tecnica": "Óleo",
+    "ano": "2007",
+    "imagen": "img/obras/Cachibaches-Lecheros-Oleo-24-x-20-2007.jpg"
+  },
+  {
+    "id": "aqua-marina-2016",
+    "titulo": "Aqua Marina",
+    "categoria": "Acrílico",
+    "medidas": "35.5 x 35.5 cm",
+    "tecnica": "Acrílico",
+    "ano": "2016",
+    "imagen": "img/obras/Aqua-Marina-Acrílico-35.5-x-35.5-2016.jpg"
+  },
+  {
+    "id": "mercado-flotante-2009",
+    "titulo": "Mercado Flotante",
+    "categoria": "Óleo",
+    "medidas": "36 x 28 cm",
+    "tecnica": "Óleo",
+    "ano": "2009",
+    "imagen": "img/obras/Mercado-Flotante-36-x-28-oleo-2009.jpg"
+  },
+  {
+    "id": "meteoro-azul-2016",
+    "titulo": "Meteoro Azul",
+    "categoria": "Óleo",
+    "medidas": "30 x 40 cm",
+    "tecnica": "Óleo",
+    "ano": "2016",
+    "imagen": "img/obras/Meteoro-Azul-30-x-40-oleo-2016.jpg"
+  },
+  {
+    "id": "virgen-silencio-2013",
+    "titulo": "La Virgen del Silencio",
+    "categoria": "Óleo",
+    "medidas": "14.5 x 18 cm",
+    "tecnica": "Óleo",
+    "ano": "2013",
+    "imagen": "img/obras/La-Virgen-del-Silencio-Oleo-14.5-x-18-2013.jpg"
+  }
+]
