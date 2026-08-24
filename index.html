@@ -4,343 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suyapa Monterroso | Galería de Arte</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-color: #faf8f5;
-      --text-color: #2c2927;
-      --accent-color: #9c7b50;
-      --accent-light: #dfd3c3;
-      --dark-card: #1f1d1b;
-      --white: #ffffff;
+      --bg-color: #faf8f5; --text-color: #2c2927; --accent-color: #9c7b50;
+      --accent-light: #dfd3c3; --dark-card: #1f1d1b; --white: #ffffff;
       --font-serif: 'Cormorant Garamond', Georgia, serif;
       --font-sans: 'Montserrat', sans-serif;
     }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-sans); background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+    
+    header { position: sticky; top: 0; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(156, 123, 80, 0.15); z-index: 1000; }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; }
+    .logo { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--text-color); text-decoration: none; }
+    nav ul { display: flex; list-style: none; gap: 1.8rem; }
+    nav a { text-decoration: none; color: var(--text-color); font-size: 0.9rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    nav a:hover { color: var(--accent-color); }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    .hero { min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; background: var(--dark-card); color: var(--white); }
+    .hero h1 { font-family: var(--font-serif); font-size: 3.5rem; font-weight: 400; line-height: 1.2; margin-bottom: 2rem; }
+    
+    section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+    .section-title { text-align: center; margin-bottom: 3.5rem; }
+    .section-title h2 { font-family: var(--font-serif); font-size: 2.8rem; font-weight: 600; }
 
-    body {
-      font-family: var(--font-sans);
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
+    /* Filtros y Galería Dinámica */
+    .filtros { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
+    .btn-filtro { padding: 0.5rem 1.5rem; border: 1px solid var(--accent-color); background: transparent; color: var(--text-color); cursor: pointer; border-radius: 20px; transition: 0.3s; }
+    .btn-filtro.activo, .btn-filtro:hover { background: var(--accent-color); color: var(--white); }
 
-    /* Navbar */
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(250, 248, 245, 0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(156, 123, 80, 0.15);
-      z-index: 1000;
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.2rem 2rem;
-    }
-
-    .logo {
-      font-family: var(--font-serif);
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--text-color);
-      text-decoration: none;
-      letter-spacing: 1px;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 1.8rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent-color);
-    }
-
-    /* Hero Section */
-    .hero {
-      position: relative;
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(rgba(44, 41, 39, 0.5), rgba(44, 41, 39, 0.5)),
-                  url('https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: var(--white);
-    }
-
-    .hero-content {
-      max-width: 800px;
-    }
-
-    .hero h2 {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-bottom: 1rem;
-      color: var(--accent-light);
-    }
-
-    .hero h1 {
-      font-family: var(--font-serif);
-      font-size: 3.5rem;
-      font-weight: 400;
-      line-height: 1.2;
-      margin-bottom: 2rem;
-    }
-
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.9rem 2.2rem;
-      border: 1px solid var(--white);
-      color: var(--white);
-      text-decoration: none;
-      font-size: 0.85rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-    }
-
-    .btn-primary {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
-    }
-
-    .btn-primary:hover {
-      background-color: #856740;
-      border-color: #856740;
-    }
-
-    .btn-outline:hover {
-      background-color: var(--white);
-      color: var(--text-color);
-    }
-
-    /* Section Styles */
-    section {
-      padding: 5rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 3.5rem;
-    }
-
-    .section-title h2 {
-      font-family: var(--font-serif);
-      font-size: 2.8rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .section-title p {
-      color: var(--accent-color);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-    }
-
-    /* Galeria */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .art-card {
-      background: var(--white);
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .art-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .art-img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .art-info {
-      padding: 1.5rem;
-    }
-
-    .art-info h3 {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .art-info span {
-      font-size: 0.85rem;
-      color: #777;
-    }
-
-    /* Biografia */
-    .bio-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .bio-img {
-      width: 100%;
-      border-radius: 4px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-
-    .bio-text p {
-      margin-bottom: 1.2rem;
-      color: #555;
-    }
-
-    /* Footer */
-    footer {
-      background-color: var(--dark-card);
-      color: #bbb;
-      text-align: center;
-      padding: 3rem 2rem;
-      margin-top: 4rem;
-      font-size: 0.85rem;
-    }
-
-    footer a {
-      color: var(--accent-light);
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+    .art-card { background: var(--white); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+    .art-card:hover { transform: translateY(-5px); }
+    .art-img { width: 100%; height: 300px; object-fit: cover; display: block; }
+    .art-info { padding: 1.5rem; }
+    .art-info h3 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 0.3rem; }
+    .art-info p { font-size: 0.85rem; color: #777; margin-bottom: 0.2rem; }
+    .badge { display: inline-block; background: var(--accent-light); color: var(--dark-card); padding: 0.2rem 0.6rem; font-size: 0.7rem; border-radius: 10px; margin-top: 0.5rem; font-weight: 600;}
 
     @media (max-width: 768px) {
       .nav-container { flex-direction: column; gap: 1rem; }
       nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; }
-      .hero h1 { font-size: 2.3rem; }
-      .bio-container { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header / Navegación -->
   <header>
     <div class="nav-container">
-      <a href="#inicio" class="logo">Suyapa Monterroso</a>
+      <a href="#" class="logo">Suyapa Monterroso</a>
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#biografia">Biografía</a></li>
           <li><a href="#galeria">Galería</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#biografia">Biografía</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="inicio">
-    <div class="hero-content">
-      <h2>Bienvenido</h2>
-      <h1>Arte inspirado en elegancia, armonía y trazos de abstracción</h1>
-      <div class="btn-group">
-        <a href="#galeria" class="btn btn-primary">Ver Galería</a>
-        <a href="#contacto" class="btn btn-outline">Contacto</a>
-      </div>
+    <div>
+      <h1>Arte inspirado en elegancia, armonía<br>y trazos de abstracción</h1>
     </div>
   </section>
 
-  <!-- Galería -->
   <section id="galeria">
     <div class="section-title">
-      <p>Colección</p>
-      <h2>Obras Destacadas</h2>
+      <h2>Colección</h2>
     </div>
-    <div class="gallery-grid">
-      <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="Obra de arte" class="art-img">
-        <div class="art-info">
-          <h3>Armonía Cromática</h3>
-          <span>Óleo sobre lienzo — 100 x 80 cm</span>
-        </div>
-      </div>
-      <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="Obra de arte" class="art-img">
-        <div class="art-info">
-          <h3>Elegancia Abstracta</h3>
-          <span>Técnica mixta — 120 x 90 cm</span>
-        </div>
-      </div>
-      <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=800&q=80" alt="Obra de arte" class="art-img">
-        <div class="art-info">
-          <h3>Trazos de Luz</h3>
-          <span>Acrílico sobre lienzo — 90 x 90 cm</span>
-        </div>
-      </div>
+    
+    <div class="filtros" id="contenedorFiltros">
+      <!-- Los filtros se generan dinámicamente desde el JSON -->
+    </div>
+
+    <div class="gallery-grid" id="contenedorObras">
+      <!-- Las obras se inyectan aquí con JavaScript -->
+      <p style="text-align:center; width: 100%;">Cargando galería...</p>
     </div>
   </section>
 
-  <!-- Biografía -->
-  <section id="biografia">
-    <div class="bio-container">
-      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Suyapa Monterroso" class="bio-img">
-      <div class="bio-text">
-        <div class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
-          <p>Trayectoria</p>
-          <h2>Suyapa Monterroso</h2>
-        </div>
-        <p>Suyapa Monterroso es una artista plástica cuya obra explora la intersección entre el dinamismo abstracto y la serenidad cromática.</p>
-        <p>Cada una de sus piezas refleja un diálogo constante entre forma y emoción, utilizando texturas y capas de color que invitan a la contemplación y al descubrimiento.</p>
-      </div>
-    </div>
-  </section>
+  <script>
+    let obrasGlobal = [];
 
-  <!-- Footer -->
-  <footer id="contacto">
-    <p>© 2025 Suyapa Monterroso | Galería de Arte</p>
-    <p style="margin-top: 0.8rem;">
-      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> • 
-      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
-    </p>
-  </footer>
+    // Cargar obras desde obras.json
+    fetch('obras.json')
+      .then(response => response.json())
+      .then(obras => {
+        obrasGlobal = obras;
+        generarFiltros(obras);
+        renderizarObras(obras);
+      })
+      .catch(error => {
+        document.getElementById('contenedorObras').innerHTML = '<p>Error al cargar la galería.</p>';
+      });
 
+    function generarFiltros(obras) {
+      const categorias = new Set(obras.map(o => o.categoria));
+      const contenedor = document.getElementById('contenedorFiltros');
+      
+      let html = `<button class="btn-filtro activo" onclick="filtrar('Todas')">Todas</button>`;
+      categorias.forEach(cat => {
+        if(cat) html += `<button class="btn-filtro" onclick="filtrar('${cat}')">${cat}</button>`;
+      });
+      contenedor.innerHTML = html;
+    }
+
+    function renderizarObras(obras) {
+      const contenedor = document.getElementById('contenedorObras');
+      contenedor.innerHTML = '';
+      
+      obras.forEach(obra => {
+        contenedor.innerHTML += `
+          <div class="art-card">
+            <img src="${obra.imagen}" alt="${obra.titulo}" class="art-img" onerror="this.src='https://via.placeholder.com/300x300?text=Sin+Imagen'">
+            <div class="art-info">
+              <h3>${obra.titulo}</h3>
+              <p>${obra.tecnica} — ${obra.medidas}</p>
+              <p>Año: ${obra.ano}</p>
+              <span class="badge">${obra.categoria}</span>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function filtrar(categoria) {
+      // Actualizar estilo botones
+      document.querySelectorAll('.btn-filtro').forEach(btn => {
+        btn.classList.remove('activo');
+        if(btn.innerText === categoria) btn.classList.add('activo');
+      });
+
+      // Filtrar array
+      const filtradas = categoria === 'Todas' ? obrasGlobal : obrasGlobal.filter(o => o.categoria === categoria);
+      renderizarObras(filtradas);
+    }
+  </script>
 </body>
 </html>
