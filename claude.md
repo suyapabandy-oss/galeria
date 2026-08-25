@@ -24,11 +24,30 @@ Ella usa el sitio desde **Safari en iPhone**.
 Todo pasa dentro de `index.html`, con rutas por *hash*, así que el botón "atrás" del
 teléfono funciona y cada vista se puede compartir por enlace:
 
-- `#/` — muestra **solo las categorías**, cada una con su portada y su conteo.
+- `#/` — la portada: el panel, las categorías, las colecciones y la biografía corta.
 - `#/tema/Abstractos` — las obras de esa categoría.
 - `#/coleccion/Ser Mujer` — las obras de esa colección.
 - `#/disponibles` — solo lo que está a la venta.
+- `#/biografia` — la biografía completa, con trayectoria y series.
 - `#/obra/apasionada` — la ficha de una obra, con medidas, técnica y fotos de detalle.
+
+La función `armar()` decide qué piezas se ven en cada ruta:
+
+| | `#panel` | `#bio-corta` | `#galeria` | `#biografia` |
+|---|---|---|---|---|
+| portada | sí | sí | sí | no |
+| categoría / colección / disponibles | no | no | sí | no |
+| `#/biografia` | no | no | no | sí |
+
+El panel y la biografía **solo pertenecen a la portada**. Dentro de una categoría
+estorban: quien llegó ahí ya vino a ver obras, no a leer la presentación otra vez.
+Si agregás secciones nuevas a la portada, sumalas a `armar()` o van a aparecer
+en todas las vistas.
+
+La cuadrícula de categorías no lleva encabezado a propósito. Antes decía
+"Colección" justo encima del bloque "Colecciones", y las dos cosas no son lo
+mismo: las categorías son temas (Abstractos, Figura Humana) y las colecciones
+son series (Ser Mujer, Miradas del Alma).
 
 ### Forma de una obra en `obras.json`
 

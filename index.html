@@ -108,7 +108,9 @@
     .modal-nav button:disabled { opacity: .3; cursor: default; }
 
     /* --- Biografía --- */
-    #biografia { background: var(--white); max-width: none; padding: 5rem 2rem; border-top: 1px solid var(--accent-light); }
+    [hidden] { display: none !important; }
+    #biografia, #bio-corta { background: var(--white); max-width: none; padding: 5rem 2rem;
+                             border-top: 1px solid var(--accent-light); }
     .bio-wrap { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 340px 1fr; gap: 3.5rem;
                 align-items: start; }
     .bio-foto figure { margin: 0; }
@@ -122,6 +124,12 @@
     .bio-texto p.destacado { font-family: var(--font-serif); font-size: 1.35rem; font-style: italic;
                              color: var(--accent-color); line-height: 1.45; margin: 1.8rem 0 0;
                              padding-left: 1.2rem; border-left: 2px solid var(--accent-light); }
+
+    .bio-mas { margin-top: 1.8rem; }
+    .bio-mas a { color: var(--accent-color); font-size: .82rem; letter-spacing: 1px;
+                 text-transform: uppercase; font-weight: 500; }
+    .bio-mas a:hover { text-decoration: underline; }
+    #bio-corta .volver, #biografia .volver { display: inline-block; }
 
     .bio-extra { max-width: 1100px; margin: 0 auto; }
     .bio-extra .subtitulo { margin: 4rem 0 1.8rem; }
@@ -168,7 +176,7 @@
       .art-info h3 { font-size: 1.1rem; }
       .cat-txt h3 { font-size: 1.5rem; }
       .hero { min-height: 72vh; padding: 3.5rem 1.2rem; }
-      #biografia { padding: 3rem 1.2rem; }
+      #biografia, #bio-corta { padding: 3rem 1.2rem; }
       .bio-wrap { grid-template-columns: 1fr; gap: 2rem; }
       .bio-foto { max-width: 280px; margin: 0 auto; }
       .bio-extra .subtitulo { margin: 2.8rem 0 1.4rem; }
@@ -189,13 +197,13 @@
         <ul>
           <li><a href="#/">Galería</a></li>
           <li><a href="#/disponibles">Disponibles</a></li>
-          <li><a href="#biografia">Biografía</a></li>
+          <li><a href="#/biografia">Biografía</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="inicio">
+  <section class="hero" id="panel">
     <div>
       <h1>Arte inspirado en elegancia, armonía<br>y trazos de abstracción</h1>
     </div>
@@ -206,7 +214,8 @@
     <div id="vista"><p style="text-align:center">Cargando galería…</p></div>
   </section>
 
-  <section id="biografia">
+  <!-- Version corta: solo en la portada -->
+  <section id="bio-corta" hidden>
     <div class="bio-wrap">
       <div class="bio-foto">
         <figure>
@@ -215,6 +224,31 @@
         </figure>
       </div>
       <div class="bio-texto">
+        <h2>Suyapa Bandy Monterroso</h2>
+        <p class="bio-rol">Artista plástica · San Pedro Sula, Honduras</p>
+
+        <p>Nací en San Pedro Sula y desde temprana edad sentí inclinación por el arte. Comencé a pintar al óleo con una amiga en casa, y así fui descubriendo toda la energía del color, el movimiento, la fuerza, el entusiasmo y pasión por el pincel que me envolvió cada vez más.</p>
+
+        <p>En mis obras pueden apreciar diferentes temas y técnicas, inclinándome más a la figura humana; mis pinceladas son libres, usando en algunas la espátula, dando textura en ellas.</p>
+
+        <p class="destacado">Mis obras hablan de lo que llevo dentro, expresando gratos sentimientos y transmitiendo sensibilidad y emociones al espectador.</p>
+
+        <p class="bio-mas"><a href="#/biografia">Conocer su trayectoria &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Version completa: solo en #/biografia -->
+  <section id="biografia" hidden>
+    <div class="bio-wrap">
+      <div class="bio-foto">
+        <figure>
+          <img src="img/suyapa.jpg" alt="Retrato de Suyapa Bandy Monterroso" loading="lazy" width="500" height="640">
+          <figcaption>Suyapa en su taller, frente a <a href="#/obra/pinas-en-el-pinal">Piñas en el piñal</a>.</figcaption>
+        </figure>
+      </div>
+      <div class="bio-texto">
+        <a class="volver" href="#/">&larr; Volver a la galería</a>
         <h2>Suyapa Bandy Monterroso</h2>
         <p class="bio-rol">Artista plástica · San Pedro Sula, Honduras</p>
 
@@ -364,22 +398,44 @@
       });
 
     /* ---------- rutas ---------- */
+    // El panel y la biografía solo pertenecen a la portada. Dentro de una
+    // categoría estorban: la persona ya vino a ver obras.
+    function armar(cual) {
+      document.getElementById('panel').hidden     = (cual !== 'portada');
+      document.getElementById('bio-corta').hidden = (cual !== 'portada');
+      document.getElementById('biografia').hidden = (cual !== 'bio');
+      document.getElementById('galeria').hidden   = (cual === 'bio');
+    }
+
     function enrutar() {
-      // Un ancla normal (#biografia) no es una ruta: dejá que el navegador
-      // haga su scroll y no vuelvas a dibujar la galería.
+      // Un ancla normal (#algo) no es una ruta: dejá que el navegador haga su
+      // scroll y no vuelvas a dibujar nada.
       if (location.hash && location.hash.charAt(1) !== '/') return;
       var partes = decodeURIComponent(location.hash.replace(/^#\/?/, '')).split('/');
       cerrarModal(true);
+
       if (partes[0] === 'obra' && partes[1]) {
         var o = obras.filter(function (x) { return x.id === partes[1]; })[0];
-        if (o) { if (!listaActual.length) { verCategorias(); } abrirModal(o); return; }
+        if (o) { if (!listaActual.length) { armar('portada'); verCategorias(); } abrirModal(o); return; }
       }
-      if (partes[0] === 'tema' && partes[1] && porTema[partes[1]]) { verLista(partes[1], porTema[partes[1]]); return; }
-      if (partes[0] === 'coleccion' && partes[1] && colecciones[partes[1]]) { verLista(partes[1], colecciones[partes[1]]); return; }
+      if (partes[0] === 'biografia') {
+        armar('bio');
+        window.scrollTo(0, 0);
+        document.title = 'Biografía | Suyapa Monterroso';
+        return;
+      }
+      if (partes[0] === 'tema' && partes[1] && porTema[partes[1]]) {
+        armar('lista'); verLista(partes[1], porTema[partes[1]]); return;
+      }
+      if (partes[0] === 'coleccion' && partes[1] && colecciones[partes[1]]) {
+        armar('lista'); verLista(partes[1], colecciones[partes[1]]); return;
+      }
       if (partes[0] === 'disponibles') {
+        armar('lista');
         verLista('Disponibles', obras.filter(function (o) { return o.disponible === true; }));
         return;
       }
+      armar('portada');
       verCategorias();
     }
 
@@ -398,8 +454,7 @@
         if (b === 'Otras obras') return -1;
         return porTema[b].length - porTema[a].length;
       });
-      var html = '<div class="section-title"><h2>Colección</h2><p>' + obras.length +
-                 ' obras · elegí una categoría para verlas</p></div><div class="cat-grid">';
+      var html = '<div class="cat-grid">';
       temas.forEach(function (t) { html += tarjetaCat(t, porTema[t], 'tema'); });
       html += '</div>';
 
