@@ -123,6 +123,39 @@
                              color: var(--accent-color); line-height: 1.45; margin: 1.8rem 0 0;
                              padding-left: 1.2rem; border-left: 2px solid var(--accent-light); }
 
+    .bio-extra { max-width: 1100px; margin: 0 auto; }
+    .bio-extra .subtitulo { margin: 4rem 0 1.8rem; }
+
+    .linea { list-style: none; max-width: 780px; margin: 0 auto; }
+    .linea li { display: grid; grid-template-columns: 92px 1fr; gap: 1.6rem; padding: 0 0 2rem 0;
+                position: relative; }
+    .linea li::before { content: ''; position: absolute; left: 103px; top: .7rem; bottom: -.4rem;
+                        width: 1px; background: var(--accent-light); }
+    .linea li:last-child::before { display: none; }
+    .linea .anio { font-family: var(--font-serif); font-size: 1.55rem; color: var(--accent-color);
+                   text-align: right; position: relative; }
+    .linea .anio::after { content: ''; position: absolute; right: -14px; top: .62rem; width: 7px; height: 7px;
+                          border-radius: 50%; background: var(--accent-color); }
+    .linea h4 { font-size: .95rem; font-weight: 600; margin-bottom: .15rem; }
+    .linea h4 + p { margin-bottom: 1.1rem; }
+    .linea p { font-size: .85rem; color: var(--muted); }
+    .linea div > h4 ~ h4 { margin-top: .3rem; }
+
+    .otros { list-style: none; max-width: 780px; margin: 0 auto; }
+    .otros li { padding: .85rem 0 .85rem 1.4rem; border-bottom: 1px solid var(--accent-light);
+                font-size: .89rem; position: relative; }
+    .otros li::before { content: '·'; position: absolute; left: .2rem; color: var(--accent-color);
+                        font-weight: 700; font-size: 1.4rem; line-height: 1; }
+    .otros li:last-child { border-bottom: none; }
+    .otros a { color: var(--accent-color); text-decoration: underline; }
+
+    .series { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;
+              max-width: 900px; margin: 0 auto; }
+    .series article { border-top: 2px solid var(--accent-light); padding-top: 1.2rem; }
+    .series h4 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 600; margin-bottom: .8rem; }
+    .series h4 a:hover { color: var(--accent-color); }
+    .series p { font-size: .88rem; color: #5a534d; margin-bottom: .8rem; }
+
     footer { background: var(--dark-card); color: rgba(255,255,255,.65); text-align: center;
              padding: 2.5rem 2rem; font-size: .82rem; }
 
@@ -138,6 +171,12 @@
       #biografia { padding: 3rem 1.2rem; }
       .bio-wrap { grid-template-columns: 1fr; gap: 2rem; }
       .bio-foto { max-width: 280px; margin: 0 auto; }
+      .bio-extra .subtitulo { margin: 2.8rem 0 1.4rem; }
+      .linea li { grid-template-columns: 1fr; gap: .4rem; padding-bottom: 1.6rem; }
+      .linea li::before { display: none; }
+      .linea .anio { text-align: left; font-size: 1.35rem; }
+      .linea .anio::after { display: none; }
+      .series { gap: 1.8rem; }
     }
   </style>
 </head>
@@ -179,19 +218,106 @@
         <h2>Suyapa Bandy Monterroso</h2>
         <p class="bio-rol">Artista plástica · San Pedro Sula, Honduras</p>
 
-        <p>Soy artista plástica, nací en la ciudad de San Pedro Sula, Honduras. Desde niña sentí inclinación por lo artístico.</p>
+        <p>Nací en San Pedro Sula el 19 de agosto de 1960 y desde temprana edad sentí inclinación por el arte.</p>
 
-        <p>Fue así como comencé a pintar en casa con una amiga y envolviéndome toda la energía del color y el movimiento despertó en mí una pasión por el arte.</p>
+        <p>Comencé a pintar al óleo con una amiga en casa, y así fui descubriendo toda la energía del color, el movimiento, la fuerza, el entusiasmo y pasión por el pincel que me envolvió cada vez más.</p>
 
-        <p>Llena de muchas actividades como madre y esposa me organicé y conseguí dedicarme a la pintura, comencé a prepararme con reconocidos artistas, tanto nacionales como internacionales.</p>
+        <p>Con mis múltiples ocupaciones como esposa y madre comencé a hacer espacio para tomar talleres de pintura con reconocidos artistas de la ciudad, siendo mi primer maestro Gregorio Sabillón, luego el artista Antonio Vinciguerra, Natán Zúniga, y talleres con la venezolana Geula Silverman, Rolando Rodríguez, la norteamericana Elody Gyekis y Guido Garaycochea de Lima, Perú, entre otros.</p>
 
-        <p>He participado en numerosas exposiciones colectivas entre ellas en el Banco Central de Honduras, el Centro Cultural Sampedrano, el Instituto hondureño de cultura interamericana, (IHCI) y exposiciones por la Asociación de mujeres artista de Honduras (AMAH) de la cual soy miembro activo y además ex-presidente por un periodo consecutivo de 3 años. Exposiciones en El arte y la Paz de nuestra Asociación Amah.</p>
+        <p>He participado en más de 30 exposiciones colectivas, entre ellas “El Arte y la Paz” en Banco del País, el Salón Nacional del Arte en el Centro Cultural Sampedrano, y en el Teatro José Francisco Saybe en el concurso “Uniendo una Nación por el Arte”, organizado por Pebeo con jurado francés, donde obtuve Medalla de Mención Honorífica.</p>
 
-        <p>Exposiciones internacionales, en la ciudades de Cali Colombia, Quito Ecuador, y la ciudad de Panamá. Exposiciones individuales en mi país en las ciudades de Tegucigalpa, D. C. y Gracias, Lempira. He tenido oportunidades de exponer mis obras en varias exposiciones itinerantes en muchas ciudades de Honduras.</p>
+        <p>En mis obras pueden apreciar diferentes temas y técnicas, inclinándome más a la figura humana; mis pinceladas son libres, usando en algunas la espátula, dando textura en ellas. Mis obras son coleccionadas por compradores tanto nacionales como internacionales.</p>
 
-        <p>Manejo diferentes técnicas y temas inclinándome más hacia la figura humana, mis pinceladas son libres, me gusta trabajar con la espátula, poner textura en los lienzos, lo que me ha llevado a crear obras abstractas.</p>
+        <p>Soy socia de la Asociación de Mujeres Artistas de Honduras (AMAH) desde el año 2009, y fui su presidenta por un periodo consecutivo de tres años. También soy co-fundadora del proyecto expositivo <em>Mi Ciudad de los Zorzales</em>.</p>
 
-        <p class="destacado">Mis obras hablan de lo que llevo dentro, expresando gratos sentimientos y transmitiendo sensibilidad y emociones al espectador.</p>
+        <p>Actualmente dedico mi tiempo a la pintura en medio de mis ocupaciones del día. Cuento con el apoyo y amor de mi esposo y mis hijos, quienes para mí son:</p>
+
+        <p class="destacado">“Mi Mejor Obra de Arte”</p>
+      </div>
+    </div>
+
+    <div class="bio-extra">
+      <h3 class="subtitulo">Trayectoria</h3>
+      <ol class="linea">
+        <li>
+          <span class="anio">2025</span>
+          <div>
+            <h4>Sentimientos y Colores</h4>
+            <p>Banco Central de Honduras, San Pedro Sula · 25 de abril</p>
+            <h4>Mi Ciudad de los Zorzales V</h4>
+            <p>Torre Banpaís · 28 de agosto</p>
+          </div>
+        </li>
+        <li>
+          <span class="anio">2024</span>
+          <div>
+            <h4>Homenaje por su trayectoria artística</h4>
+            <p>XX edición de “El Arte y la Paz en Honduras”, organizada por AMAH a beneficio de la Fundación Enrique Rodenzo Carbajal · 19 de septiembre</p>
+            <h4>Mi Ciudad de los Zorzales IV</h4>
+            <p>Banpaís, con la colaboración del IHCI · 25 de julio. Coordinó la exposición junto a Fernando Carranza: 22 artistas nacionales y 45 obras</p>
+            <h4>Los 85 años del IHCI</h4>
+            <p>Museo de la Identidad Nacional, Tegucigalpa · 8 de febrero. Fue una de las 85 artistas escogidas, con la obra <em>Terra Nostra</em></p>
+          </div>
+        </li>
+        <li>
+          <span class="anio">2023</span>
+          <div>
+            <h4>Pinceladas del Alma</h4>
+            <p>Galería Colibrí, Centro Cultural Sampedrano · del 6 de diciembre de 2023 al 20 de enero de 2024. “Tres mujeres, tres artistas, tres amigas”</p>
+            <h4>Mi Ciudad de los Zorzales III</h4>
+            <p>Banco del País, edificio La Torre · 26 de julio. 32 obras de 17 artistas, sobre el tema del emprendimiento</p>
+            <h4>Exposición en Ferretería Monterroso</h4>
+            <p>En alianza con el lanzamiento de los productos ArtiSur · 11 de mayo</p>
+          </div>
+        </li>
+        <li>
+          <span class="anio">2019</span>
+          <div>
+            <h4>Honduras Artística al Descubierto · Quito, Ecuador</h4>
+            <p>Centro Ecuatoriano Norteamericano, por invitación del IHCI. Primera muestra colectiva de arte hondureño en esa ciudad, con un grupo de cinco artistas</p>
+          </div>
+        </li>
+        <li>
+          <span class="anio">2018</span>
+          <div>
+            <h4>Honduras Artística al Descubierto · Cali, Colombia</h4>
+            <p>Galería Humberto Hernández del Centro Cultural Colombo Americano, exposición llevada por el IHCI · noviembre. Seis artistas representando a Honduras</p>
+          </div>
+        </li>
+        <li>
+          <span class="anio">2016</span>
+          <div>
+            <h4>Maestros del Pincel en la Ciudad de los Zorzales</h4>
+            <p>Banco Central de Honduras · 1 de abril</p>
+            <h4>El Color del Tiempo</h4>
+            <p>Banco Central de Honduras · 11 de noviembre</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="subtitulo">Otros reconocimientos y exposiciones</h3>
+      <ul class="otros">
+        <li><strong>Segundo lugar</strong> en La Casa del Arte de Guatemala, como artista invitada del mes, con la obra <a href="#/obra/coqueteando">Coqueteando</a>.</li>
+        <li><strong>Medalla de Mención Honorífica</strong> en el concurso “Uniendo una Nación por el Arte”, organizado por Pebeo con jurado francés, en el Teatro José Francisco Saybe.</li>
+        <li><strong>FIFAC · Estambul, Turquía.</strong> Participación con una de sus obras en la subasta del festival.</li>
+        <li><strong>Honduras Arte y Luz · Ciudad de Panamá.</strong> Invitada por la Embajada de Honduras en Panamá, Tovart Gallery y la Asociación de Damas Hondureñas en Panamá, en el Hotel Hilton.</li>
+        <li><strong>El Arte de Llevar Luz a la Oscuridad.</strong> Subasta en línea a beneficio de la Fundación Infracnovi, que atiende a niños no videntes.</li>
+        <li><strong>Mi Ciudad de los Zorzales.</strong> Co-fundadora del proyecto expositivo que reúne a artistas sampedranos alrededor de los lugares icónicos de la ciudad, desde su primera edición con catorce artistas.</li>
+        <li>Entrevistas en la revista <em>Cromos</em> y en el suplemento de <em>La Prensa</em> por la Feria Juniana de San Pedro Sula.</li>
+      </ul>
+
+      <h3 class="subtitulo">Sus series</h3>
+      <div class="series">
+        <article>
+          <h4><a href="#/coleccion/Ser%20Mujer">Ser Mujer</a></h4>
+          <p>“En esta serie quiero representar la profunda belleza de lo que es la feminidad. He trabajado la figura humana en grises, pero al colocar los colores en el fondo de cada una de ellas busco transmitir el estallido de colores que hay en el interior de cada mujer: la fuerza, la valentía, la honestidad, la energía, la pasión, la sinceridad, la paciencia, la fidelidad, las emociones y el más importante de todos, el amor.</p>
+          <p>En todas estas mujeres que he plasmado en mis lienzos, estás tú incluida.”</p>
+        </article>
+        <article>
+          <h4><a href="#/coleccion/Miradas%20del%20Alma">Miradas del Alma</a></h4>
+          <p>“Usando mi medio habitual, que es el óleo, y haciendo una monocromía con un toque de color, he querido expresar los múltiples mensajes y sentimientos que podemos mostrar a través de nuestra mirada. Cuando queremos transmitir un mensaje lo hacemos mejor con los ojos que con la comunicación verbal, de allí la frase <em>una mirada vale más que mil palabras</em>.</p>
+          <p>Observando un poco podemos ver la inocencia, la ternura, la sensualidad, la pasión, así mismo como la angustia y las alegrías en diferentes momentos de nuestra vida.”</p>
+        </article>
       </div>
     </div>
   </section>
