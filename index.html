@@ -4,48 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suyapa Monterroso | Galería de Arte</title>
+  <meta name="description" content="Obra de la artista hondureña Suyapa Monterroso: óleos, acrílicos y técnica mixta.">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <link rel="icon" href="img/icon-192.png">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-color: #faf8f5; --text-color: #2c2927; --accent-color: #9c7b50;
       --accent-light: #dfd3c3; --dark-card: #1f1d1b; --white: #ffffff;
+      --muted: #7b736c;
       --font-serif: 'Cormorant Garamond', Georgia, serif;
       --font-sans: 'Montserrat', sans-serif;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font-sans); background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
-    
-    header { position: sticky; top: 0; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(156, 123, 80, 0.15); z-index: 1000; }
-    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; }
-    .logo { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; color: var(--text-color); text-decoration: none; }
+    body { font-family: var(--font-sans); background: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    header { position: sticky; top: 0; background: rgba(250,248,245,.95); backdrop-filter: blur(8px);
+             border-bottom: 1px solid rgba(156,123,80,.15); z-index: 100; }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;
+                     align-items: center; padding: 1.2rem 2rem; gap: 1rem; }
+    .logo { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 700; }
     nav ul { display: flex; list-style: none; gap: 1.8rem; }
-    nav a { text-decoration: none; color: var(--text-color); font-size: 0.9rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    nav a { font-size: .85rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
     nav a:hover { color: var(--accent-color); }
 
-    .hero { min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; background: var(--dark-card); color: var(--white); }
-    .hero h1 { font-family: var(--font-serif); font-size: 3.5rem; font-weight: 400; line-height: 1.2; margin-bottom: 2rem; }
-    
-    section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-    .section-title { text-align: center; margin-bottom: 3.5rem; }
-    .section-title h2 { font-family: var(--font-serif); font-size: 2.8rem; font-weight: 600; }
+    .hero { min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center;
+            padding: 4rem 2rem; background: var(--dark-card); color: var(--white); }
+    .hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; line-height: 1.2; }
 
-    /* Filtros y Galería Dinámica */
-    .filtros { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap; }
-    .btn-filtro { padding: 0.5rem 1.5rem; border: 1px solid var(--accent-color); background: transparent; color: var(--text-color); cursor: pointer; border-radius: 20px; transition: 0.3s; }
-    .btn-filtro.activo, .btn-filtro:hover { background: var(--accent-color); color: var(--white); }
+    section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+    .section-title { text-align: center; margin-bottom: 3rem; }
+    .section-title h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 600; }
+    .section-title p { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
+    .subtitulo { font-family: var(--font-serif); font-size: 1.6rem; text-align: center; margin: 3.5rem 0 1.5rem; }
 
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
-    .art-card { background: var(--white); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
-    .art-card:hover { transform: translateY(-5px); }
-    .art-img { width: 100%; height: 300px; object-fit: cover; display: block; }
-    .art-info { padding: 1.5rem; }
-    .art-info h3 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 0.3rem; }
-    .art-info p { font-size: 0.85rem; color: #777; margin-bottom: 0.2rem; }
-    .badge { display: inline-block; background: var(--accent-light); color: var(--dark-card); padding: 0.2rem 0.6rem; font-size: 0.7rem; border-radius: 10px; margin-top: 0.5rem; font-weight: 600;}
+    /* --- Nivel 1: categorias --- */
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.8rem; }
+    .cat-card { position: relative; display: block; overflow: hidden; border-radius: 4px;
+                background: var(--dark-card); aspect-ratio: 4/3; color: var(--white);
+                box-shadow: 0 4px 15px rgba(0,0,0,.08); }
+    .cat-card img { width: 100%; height: 100%; object-fit: cover; opacity: .62;
+                    transition: transform .5s ease, opacity .3s ease; }
+    .cat-card:hover img, .cat-card:focus-visible img { transform: scale(1.06); opacity: .5; }
+    .cat-txt { position: absolute; inset: auto 0 0 0; padding: 1.5rem;
+               background: linear-gradient(transparent, rgba(0,0,0,.75)); }
+    .cat-txt h3 { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 600; line-height: 1.1; }
+    .cat-txt span { font-size: .8rem; letter-spacing: 1px; text-transform: uppercase; opacity: .85; }
+    .cat-card.small { aspect-ratio: 16/7; }
+
+    /* --- Nivel 2: obras --- */
+    .volver { display: inline-block; color: var(--accent-color); cursor: pointer;
+              font-size: .85rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .volver:hover { text-decoration: underline; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; }
+    .art-card { display: block; background: var(--white); border-radius: 4px; overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0,0,0,.05); transition: transform .3s ease, box-shadow .3s ease; }
+    .art-card:hover, .art-card:focus-visible { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(0,0,0,.10); }
+    .art-img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--accent-light); }
+    .art-info { padding: 1.2rem 1.3rem 1.4rem; }
+    .art-info h3 { font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: .3rem; line-height: 1.2; }
+    .art-info p { font-size: .82rem; color: var(--muted); }
+    .badge { display: inline-block; background: var(--accent-light); color: var(--dark-card); padding: .2rem .6rem;
+             font-size: .68rem; border-radius: 10px; margin-top: .7rem; font-weight: 600; letter-spacing: .5px; }
+    .badge.privada { background: #ebe8e4; color: #6b6560; }
+
+    /* --- Nivel 3: ficha --- */
+    .modal { position: fixed; inset: 0; background: rgba(20,18,17,.94); z-index: 200; display: none;
+             overflow-y: auto; padding: 3rem 1rem 2rem; }
+    .modal.abierto { display: block; }
+    .modal-box { max-width: 1000px; margin: auto; color: var(--white); }
+    .modal-cerrar { position: fixed; top: .8rem; right: 1.2rem; background: none; border: none; color: var(--white);
+                    font-size: 2.4rem; line-height: 1; cursor: pointer; opacity: .8; z-index: 210; }
+    .modal-cerrar:hover { opacity: 1; }
+    .modal-img { width: 100%; max-height: 74vh; object-fit: contain; margin-bottom: 1.8rem; }
+    .modal-box h2 { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 600; }
+    .modal-datos { list-style: none; margin: 1rem 0; font-size: .92rem; }
+    .modal-datos li { padding: .35rem 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .modal-datos strong { color: var(--accent-light); font-weight: 500; margin-right: .6rem; }
+    .modal-detalles { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .modal-detalles img { width: 160px; height: 110px; object-fit: cover; border-radius: 3px; }
+    .modal-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; gap: 1rem; }
+    .modal-nav button { background: none; border: 1px solid rgba(255,255,255,.35); color: var(--white);
+                        padding: .6rem 1.2rem; border-radius: 3px; cursor: pointer; font: inherit; font-size: .8rem;
+                        text-transform: uppercase; letter-spacing: 1px; }
+    .modal-nav button:hover:not(:disabled) { background: var(--accent-color); border-color: var(--accent-color); }
+    .modal-nav button:disabled { opacity: .3; cursor: default; }
+
+    footer { background: var(--dark-card); color: rgba(255,255,255,.65); text-align: center;
+             padding: 2.5rem 2rem; font-size: .82rem; }
 
     @media (max-width: 768px) {
-      .nav-container { flex-direction: column; gap: 1rem; }
+      .nav-container { flex-direction: column; gap: .8rem; padding: 1rem; }
       nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+      section { padding: 2.5rem 1.2rem; }
+      .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; }
+      .art-info { padding: .9rem 1rem 1.1rem; }
+      .art-info h3 { font-size: 1.1rem; }
+      .cat-txt h3 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -53,12 +110,11 @@
 
   <header>
     <div class="nav-container">
-      <a href="#" class="logo">Suyapa Monterroso</a>
+      <a href="#/" class="logo">Suyapa Monterroso</a>
       <nav>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#biografia">Biografía</a></li>
+          <li><a href="#/">Galería</a></li>
+          <li><a href="#/disponibles">Disponibles</a></li>
         </ul>
       </nav>
     </div>
@@ -71,76 +127,171 @@
   </section>
 
   <section id="galeria">
-    <div class="section-title">
-      <h2>Colección</h2>
-    </div>
-    
-    <div class="filtros" id="contenedorFiltros">
-      <!-- Los filtros se generan dinámicamente desde el JSON -->
-    </div>
-
-    <div class="gallery-grid" id="contenedorObras">
-      <!-- Las obras se inyectan aquí con JavaScript -->
-      <p style="text-align:center; width: 100%;">Cargando galería...</p>
-    </div>
+    <div id="vista"><p style="text-align:center">Cargando galería…</p></div>
   </section>
 
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">&times;</button>
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="anio"></span> Suyapa Monterroso · Todos los derechos reservados</p>
+  </footer>
+
   <script>
-    let obrasGlobal = [];
+  (function () {
+    var obras = [], porTema = {}, colecciones = {}, listaActual = [];
+    var vista = document.getElementById('vista');
+    var modal = document.getElementById('modal');
+    var modalBox = document.getElementById('modalBox');
 
-    // Cargar obras desde obras.json
+    document.getElementById('anio').textContent = new Date().getFullYear();
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
     fetch('obras.json')
-      .then(response => response.json())
-      .then(obras => {
-        obrasGlobal = obras;
-        generarFiltros(obras);
-        renderizarObras(obras);
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        obras = data;
+        obras.forEach(function (o) {
+          (o.temas || []).forEach(function (t) { (porTema[t] = porTema[t] || []).push(o); });
+          if (o.coleccion && o.coleccion !== 'Colección Privada') {
+            (colecciones[o.coleccion] = colecciones[o.coleccion] || []).push(o);
+          }
+        });
+        window.addEventListener('hashchange', enrutar);
+        enrutar();
       })
-      .catch(error => {
-        document.getElementById('contenedorObras').innerHTML = '<p>Error al cargar la galería.</p>';
+      .catch(function () {
+        vista.innerHTML = '<p style="text-align:center">No se pudo cargar la galería.</p>';
       });
 
-    function generarFiltros(obras) {
-      const categorias = new Set(obras.map(o => o.categoria));
-      const contenedor = document.getElementById('contenedorFiltros');
-      
-      let html = `<button class="btn-filtro activo" onclick="filtrar('Todas')">Todas</button>`;
-      categorias.forEach(cat => {
-        if(cat) html += `<button class="btn-filtro" onclick="filtrar('${cat}')">${cat}</button>`;
-      });
-      contenedor.innerHTML = html;
+    /* ---------- rutas ---------- */
+    function enrutar() {
+      var partes = decodeURIComponent(location.hash.replace(/^#\/?/, '')).split('/');
+      cerrarModal(true);
+      if (partes[0] === 'obra' && partes[1]) {
+        var o = obras.filter(function (x) { return x.id === partes[1]; })[0];
+        if (o) { if (!listaActual.length) { verCategorias(); } abrirModal(o); return; }
+      }
+      if (partes[0] === 'tema' && partes[1] && porTema[partes[1]]) { verLista(partes[1], porTema[partes[1]]); return; }
+      if (partes[0] === 'coleccion' && partes[1] && colecciones[partes[1]]) { verLista(partes[1], colecciones[partes[1]]); return; }
+      if (partes[0] === 'disponibles') {
+        verLista('Disponibles', obras.filter(function (o) { return o.disponible === true; }));
+        return;
+      }
+      verCategorias();
     }
 
-    function renderizarObras(obras) {
-      const contenedor = document.getElementById('contenedorObras');
-      contenedor.innerHTML = '';
-      
-      obras.forEach(obra => {
-        contenedor.innerHTML += `
-          <div class="art-card">
-            <img src="${obra.imagen}" alt="${obra.titulo}" class="art-img" onerror="this.src='https://via.placeholder.com/300x300?text=Sin+Imagen'">
-            <div class="art-info">
-              <h3>${obra.titulo}</h3>
-              <p>${obra.tecnica} — ${obra.medidas}</p>
-              <p>Año: ${obra.ano}</p>
-              <span class="badge">${obra.categoria}</span>
-            </div>
-          </div>
-        `;
-      });
+    /* ---------- nivel 1: categorias ---------- */
+    function tarjetaCat(nombre, lista, ruta, small) {
+      return '<a class="cat-card' + (small ? ' small' : '') + '" href="#/' + ruta + '/' + encodeURIComponent(nombre) + '">' +
+        '<img src="' + esc(lista[0].thumb) + '" alt="" loading="lazy">' +
+        '<span class="cat-txt"><h3>' + esc(nombre) + '</h3>' +
+        '<span>' + lista.length + (lista.length === 1 ? ' obra' : ' obras') + '</span></span></a>';
     }
 
-    function filtrar(categoria) {
-      // Actualizar estilo botones
-      document.querySelectorAll('.btn-filtro').forEach(btn => {
-        btn.classList.remove('activo');
-        if(btn.innerText === categoria) btn.classList.add('activo');
+    function verCategorias() {
+      listaActual = [];
+      var temas = Object.keys(porTema).sort(function (a, b) {
+        if (a === 'Otras obras') return 1;
+        if (b === 'Otras obras') return -1;
+        return porTema[b].length - porTema[a].length;
       });
+      var html = '<div class="section-title"><h2>Colección</h2><p>' + obras.length +
+                 ' obras · elegí una categoría para verlas</p></div><div class="cat-grid">';
+      temas.forEach(function (t) { html += tarjetaCat(t, porTema[t], 'tema'); });
+      html += '</div>';
 
-      // Filtrar array
-      const filtradas = categoria === 'Todas' ? obrasGlobal : obrasGlobal.filter(o => o.categoria === categoria);
-      renderizarObras(filtradas);
+      var cols = Object.keys(colecciones);
+      if (cols.length) {
+        html += '<h3 class="subtitulo">Colecciones</h3><div class="cat-grid">';
+        cols.forEach(function (c) { html += tarjetaCat(c, colecciones[c], 'coleccion', true); });
+        html += '</div>';
+      }
+      vista.innerHTML = html;
+      document.title = 'Suyapa Monterroso | Galería de Arte';
     }
+
+    /* ---------- nivel 2: obras de una categoria ---------- */
+    function verLista(nombre, lista) {
+      if (!lista || !lista.length) { location.hash = '#/'; return; }
+      listaActual = lista;
+      var html = '<a class="volver" href="#/">&larr; Todas las categorías</a>' +
+                 '<div class="section-title"><h2>' + esc(nombre) + '</h2><p>' + lista.length +
+                 (lista.length === 1 ? ' obra' : ' obras') + '</p></div><div class="gallery-grid">';
+      lista.forEach(function (o) {
+        var pie = [o.tecnica, o.medidas].filter(Boolean).join(' · ');
+        html += '<a class="art-card" href="#/obra/' + encodeURIComponent(o.id) + '">' +
+          '<img class="art-img" src="' + esc(o.thumb) + '" alt="' + esc(o.titulo) + '" loading="lazy">' +
+          '<div class="art-info"><h3>' + esc(o.titulo) + '</h3>' +
+          (pie ? '<p>' + esc(pie) + '</p>' : '') +
+          (o.ano ? '<p>Año: ' + esc(o.ano) + '</p>' : '') +
+          (o.disponible === true ? '<span class="badge">Disponible</span>' : '') +
+          (o.coleccion === 'Colección Privada' ? '<span class="badge privada">Colección privada</span>' : '') +
+          '</div></a>';
+      });
+      vista.innerHTML = html + '</div>';
+      document.title = nombre + ' | Suyapa Monterroso';
+      window.scrollTo(0, document.getElementById('galeria').offsetTop - 80);
+    }
+
+    /* ---------- nivel 3: ficha de la obra ---------- */
+    function abrirModal(o) {
+      var base = listaActual.length ? listaActual : obras;
+      var i = base.map(function (x) { return x.id; }).indexOf(o.id);
+      var datos = [
+        ['Técnica', o.tecnica], ['Medidas', o.medidas], ['Año', o.ano],
+        ['Colección', o.coleccion],
+        ['Disponibilidad', o.disponible === true ? 'Disponible' :
+                           o.coleccion === 'Colección Privada' ? 'Colección privada' : null]
+      ].filter(function (d) { return d[1]; });
+
+      modalBox.innerHTML =
+        '<img class="modal-img" src="' + esc(o.imagen) + '" alt="' + esc(o.titulo) + '">' +
+        '<h2 id="modalTitulo">' + esc(o.titulo) + '</h2>' +
+        '<ul class="modal-datos">' + datos.map(function (d) {
+          return '<li><strong>' + d[0] + '</strong>' + esc(d[1]) + '</li>';
+        }).join('') + '</ul>' +
+        ((o.detalles && o.detalles.length) ? '<div class="modal-detalles">' + o.detalles.map(function (d) {
+          return '<img src="' + esc(d) + '" alt="Detalle de ' + esc(o.titulo) + '" loading="lazy">';
+        }).join('') + '</div>' : '') +
+        '<div class="modal-nav">' +
+          '<button id="mAnt"' + (i <= 0 ? ' disabled' : '') + '>&larr; Anterior</button>' +
+          '<button id="mSig"' + (i < 0 || i >= base.length - 1 ? ' disabled' : '') + '>Siguiente &rarr;</button>' +
+        '</div>';
+
+      var ant = document.getElementById('mAnt'), sig = document.getElementById('mSig');
+      if (ant && i > 0) ant.onclick = function () { location.hash = '#/obra/' + encodeURIComponent(base[i - 1].id); };
+      if (sig && i >= 0 && i < base.length - 1) sig.onclick = function () { location.hash = '#/obra/' + encodeURIComponent(base[i + 1].id); };
+
+      modal.classList.add('abierto');
+      document.body.style.overflow = 'hidden';
+      modal.scrollTop = 0;
+      document.title = o.titulo + ' | Suyapa Monterroso';
+    }
+
+    function cerrarModal(silencioso) {
+      var estaba = modal.classList.contains('abierto');
+      modal.classList.remove('abierto');
+      document.body.style.overflow = '';
+      if (!silencioso && estaba) { history.back(); }
+    }
+
+    document.getElementById('modalCerrar').onclick = function () { cerrarModal(); };
+    modal.addEventListener('click', function (e) { if (e.target === modal) cerrarModal(); });
+    document.addEventListener('keydown', function (e) {
+      if (!modal.classList.contains('abierto')) return;
+      if (e.key === 'Escape') cerrarModal();
+      if (e.key === 'ArrowLeft') { var a = document.getElementById('mAnt'); if (a && !a.disabled) a.click(); }
+      if (e.key === 'ArrowRight') { var s = document.getElementById('mSig'); if (s && !s.disabled) s.click(); }
+    });
+  })();
   </script>
 </body>
 </html>

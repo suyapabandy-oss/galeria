@@ -1,74 +1,1289 @@
 [
   {
+    "id": "cambio-climatico",
+    "titulo": "Cambio Climático",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "31\" x 25\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/cambio-climatico.jpg",
+    "thumb": "img/obras/thumbs/cambio-climatico.jpg",
+    "ancho": 1804,
+    "alto": 2224,
+    "detalles": []
+  },
+  {
+    "id": "cayos-cochinos",
+    "titulo": "Cayos Cochinos",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/cayos-cochinos.jpg",
+    "thumb": "img/obras/thumbs/cayos-cochinos.jpg",
+    "ancho": 1872,
+    "alto": 2560,
+    "detalles": []
+  },
+  {
+    "id": "color-y-fuerza-1",
+    "titulo": "Color y Fuerza #1",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "14\" x 14\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/color-y-fuerza-1.jpg",
+    "thumb": "img/obras/thumbs/color-y-fuerza-1.jpg",
+    "ancho": 900,
+    "alto": 972,
+    "detalles": []
+  },
+  {
+    "id": "color-y-fuerza-2",
+    "titulo": "Color y Fuerza #2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "14\" x 14\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/color-y-fuerza-2.jpg",
+    "thumb": "img/obras/thumbs/color-y-fuerza-2.jpg",
+    "ancho": 900,
+    "alto": 959,
+    "detalles": []
+  },
+  {
+    "id": "contrastes-1",
+    "titulo": "Contrastes #1",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 30\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/contrastes-1.jpg",
+    "thumb": "img/obras/thumbs/contrastes-1.jpg",
+    "ancho": 900,
+    "alto": 904,
+    "detalles": []
+  },
+  {
+    "id": "contrastes-2",
+    "titulo": "Contrastes #2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 30\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/contrastes-2.jpg",
+    "thumb": "img/obras/thumbs/contrastes-2.jpg",
+    "ancho": 900,
+    "alto": 904,
+    "detalles": []
+  },
+  {
+    "id": "distancia-focal",
+    "titulo": "Distancia Focal",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/distancia-focal.jpg",
+    "thumb": "img/obras/thumbs/distancia-focal.jpg",
+    "ancho": 900,
+    "alto": 671,
+    "detalles": []
+  },
+  {
+    "id": "dudoso-laberinto",
+    "titulo": "Dudoso Laberinto",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/dudoso-laberinto.jpg",
+    "thumb": "img/obras/thumbs/dudoso-laberinto.jpg",
+    "ancho": 900,
+    "alto": 1181,
+    "detalles": []
+  },
+  {
+    "id": "energia-empresarial",
+    "titulo": "Energía Empresarial",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 30\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/energia-empresarial.jpg",
+    "thumb": "img/obras/thumbs/energia-empresarial.jpg",
+    "ancho": 1800,
+    "alto": 2284,
+    "detalles": []
+  },
+  {
+    "id": "fondo-marino-1",
+    "titulo": "Fondo Marino 1",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/fondo-marino-1.jpg",
+    "thumb": "img/obras/thumbs/fondo-marino-1.jpg",
+    "ancho": 1000,
+    "alto": 1000,
+    "detalles": []
+  },
+  {
+    "id": "fondo-marino-2",
+    "titulo": "Fondo Marino 2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/fondo-marino-2.jpg",
+    "thumb": "img/obras/thumbs/fondo-marino-2.jpg",
+    "ancho": 997,
+    "alto": 997,
+    "detalles": []
+  },
+  {
+    "id": "golpe-de-ola",
+    "titulo": "Golpe de Ola",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 30\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/golpe-de-ola.jpg",
+    "thumb": "img/obras/thumbs/golpe-de-ola.jpg",
+    "ancho": 1804,
+    "alto": 2325,
+    "detalles": []
+  },
+  {
+    "id": "hojas-y-hojas",
+    "titulo": "Hojas y hojas",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "35\" x 47\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/hojas-y-hojas.jpg",
+    "thumb": "img/obras/thumbs/hojas-y-hojas.jpg",
+    "ancho": 900,
+    "alto": 1210,
+    "detalles": []
+  },
+  {
+    "id": "malabares-en-tiempo-de-confinamiento",
+    "titulo": "Malabares en tiempo de confinamiento",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/malabares-en-tiempo-de-confinamiento.jpg",
+    "thumb": "img/obras/thumbs/malabares-en-tiempo-de-confinamiento.jpg",
+    "ancho": 900,
+    "alto": 1203,
+    "detalles": []
+  },
+  {
+    "id": "matices-marrones",
+    "titulo": "Matices Marrones",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "31\" x 25\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/matices-marrones.jpg",
+    "thumb": "img/obras/thumbs/matices-marrones.jpg",
+    "ancho": 887,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "mujer-naturaleza",
+    "titulo": "Mujer Naturaleza",
+    "temas": [
+      "Abstractos",
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "34\" x 34\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/mujer-naturaleza.jpg",
+    "thumb": "img/obras/thumbs/mujer-naturaleza.jpg",
+    "ancho": 1280,
+    "alto": 1279,
+    "detalles": []
+  },
+  {
+    "id": "ofrenda",
+    "titulo": "Ofrenda",
+    "temas": [
+      "Abstractos",
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "34\" x 34\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/ofrenda.jpg",
+    "thumb": "img/obras/thumbs/ofrenda.jpg",
+    "ancho": 1280,
+    "alto": 1275,
+    "detalles": []
+  },
+  {
+    "id": "rotondas",
+    "titulo": "Rotondas",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Mixta",
+    "grupoTecnica": "Técnica Mixta",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/rotondas.jpg",
+    "thumb": "img/obras/thumbs/rotondas.jpg",
+    "ancho": 1180,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "se-avecina-una-tormenta",
+    "titulo": "Se Avecina Una Tormenta",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/se-avecina-una-tormenta.jpg",
+    "thumb": "img/obras/thumbs/se-avecina-una-tormenta.jpg",
+    "ancho": 1000,
+    "alto": 1341,
+    "detalles": [
+      "img/obras/se-avecina-una-tormenta-detalle-1.jpg"
+    ]
+  },
+  {
+    "id": "siempre-me-queda-tiempo",
+    "titulo": "Siempre me queda tiempo",
+    "temas": [
+      "Abstractos",
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "36\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/siempre-me-queda-tiempo.jpg",
+    "thumb": "img/obras/thumbs/siempre-me-queda-tiempo.jpg",
+    "ancho": 900,
+    "alto": 1297,
+    "detalles": []
+  },
+  {
+    "id": "trazos-de-esperanza",
+    "titulo": "Trazos de Esperanza",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/trazos-de-esperanza.jpg",
+    "thumb": "img/obras/thumbs/trazos-de-esperanza.jpg",
+    "ancho": 1000,
+    "alto": 1370,
+    "detalles": [
+      "img/obras/trazos-de-esperanza-detalle-1.jpg"
+    ]
+  },
+  {
+    "id": "verano-sereno",
+    "titulo": "Verano Sereno",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/verano-sereno.jpg",
+    "thumb": "img/obras/thumbs/verano-sereno.jpg",
+    "ancho": 1211,
+    "alto": 793,
+    "detalles": []
+  },
+  {
+    "id": "abrigo",
+    "titulo": "Abrigo",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Miradas del Alma",
+    "tecnica": "Óleo sobre lienzo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/abrigo.jpg",
+    "thumb": "img/obras/thumbs/abrigo.jpg",
+    "ancho": 1000,
+    "alto": 1343,
+    "detalles": []
+  },
+  {
+    "id": "apasionada",
+    "titulo": "Apasionada",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Ser Mujer",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "24\" x 30\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/apasionada.jpg",
+    "thumb": "img/obras/thumbs/apasionada.jpg",
+    "ancho": 1000,
+    "alto": 1264,
+    "detalles": []
+  },
+  {
+    "id": "bailarines-rusos",
+    "titulo": "Bailarines Rusos",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/bailarines-rusos.jpg",
+    "thumb": "img/obras/thumbs/bailarines-rusos.jpg",
+    "ancho": 900,
+    "alto": 1183,
+    "detalles": []
+  },
+  {
+    "id": "belleza-marroqui",
+    "titulo": "Belleza Marroquí",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "24\" x 30\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/belleza-marroqui.jpg",
+    "thumb": "img/obras/thumbs/belleza-marroqui.jpg",
+    "ancho": 900,
+    "alto": 1127,
+    "detalles": []
+  },
+  {
+    "id": "buscandote",
+    "titulo": "Buscándote",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Miradas del Alma",
+    "tecnica": "Óleo sobre lienzo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/buscandote.jpg",
+    "thumb": "img/obras/thumbs/buscandote.jpg",
+    "ancho": 1000,
+    "alto": 1361,
+    "detalles": []
+  },
+  {
+    "id": "coqueteando",
+    "titulo": "Coqueteando",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Ser Mujer",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/coqueteando.jpg",
+    "thumb": "img/obras/thumbs/coqueteando.jpg",
+    "ancho": 1000,
+    "alto": 1346,
+    "detalles": []
+  },
+  {
+    "id": "de-los-70s",
+    "titulo": "De los 70’s",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "36\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/de-los-70s.jpg",
+    "thumb": "img/obras/thumbs/de-los-70s.jpg",
+    "ancho": 900,
+    "alto": 1197,
+    "detalles": []
+  },
+  {
+    "id": "en-busca-de-la-luz",
+    "titulo": "En busca de la Luz",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "36\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/en-busca-de-la-luz.jpg",
+    "thumb": "img/obras/thumbs/en-busca-de-la-luz.jpg",
+    "ancho": 900,
+    "alto": 1209,
+    "detalles": []
+  },
+  {
+    "id": "encantadora",
+    "titulo": "Encantadora",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/encantadora.jpg",
+    "thumb": "img/obras/thumbs/encantadora.jpg",
+    "ancho": 900,
+    "alto": 1233,
+    "detalles": []
+  },
+  {
+    "id": "enfocando-el-color-del-tiempo",
+    "titulo": "Enfocando el color del tiempo",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Mixta",
+    "grupoTecnica": "Técnica Mixta",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/enfocando-el-color-del-tiempo.jpg",
+    "thumb": "img/obras/thumbs/enfocando-el-color-del-tiempo.jpg",
+    "ancho": 900,
+    "alto": 1157,
+    "detalles": []
+  },
+  {
+    "id": "enigma",
+    "titulo": "Enigma",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Ser Mujer",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/enigma.jpg",
+    "thumb": "img/obras/thumbs/enigma.jpg",
+    "ancho": 1000,
+    "alto": 1411,
+    "detalles": []
+  },
+  {
+    "id": "esperandote",
+    "titulo": "Esperándote",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Ser Mujer",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/esperandote.jpg",
+    "thumb": "img/obras/thumbs/esperandote.jpg",
+    "ancho": 1000,
+    "alto": 1354,
+    "detalles": [
+      "img/obras/esperandote-detalle-1.jpg"
+    ]
+  },
+  {
+    "id": "iluminada",
+    "titulo": "Iluminada",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Miradas del Alma",
+    "tecnica": "Óleo sobre lienzo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/iluminada.jpg",
+    "thumb": "img/obras/thumbs/iluminada.jpg",
+    "ancho": 1000,
+    "alto": 1343,
+    "detalles": []
+  },
+  {
+    "id": "mas-alla-de-la-mirada",
+    "titulo": "Mas Allá De La Mirada",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Miradas del Alma",
+    "tecnica": "Óleo sobre lienzo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/mas-alla-de-la-mirada.jpg",
+    "thumb": "img/obras/thumbs/mas-alla-de-la-mirada.jpg",
+    "ancho": 1000,
+    "alto": 1335,
+    "detalles": []
+  },
+  {
+    "id": "musa-enamorada",
+    "titulo": "Musa Enamorada",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Ser Mujer",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/musa-enamorada.jpg",
+    "thumb": "img/obras/thumbs/musa-enamorada.jpg",
+    "ancho": 900,
+    "alto": 1218,
+    "detalles": []
+  },
+  {
+    "id": "nostalgia-de-ti",
+    "titulo": "Nostalgia de ti",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "40\" x 47\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/nostalgia-de-ti.jpg",
+    "thumb": "img/obras/thumbs/nostalgia-de-ti.jpg",
+    "ancho": 1071,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "pensamientos",
+    "titulo": "Pensamientos",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": null,
+    "tecnica": "Mixta",
+    "grupoTecnica": "Técnica Mixta",
+    "medidas": "24\" x 30\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/pensamientos.jpg",
+    "thumb": "img/obras/thumbs/pensamientos.jpg",
+    "ancho": 900,
+    "alto": 1288,
+    "detalles": []
+  },
+  {
+    "id": "penelope",
+    "titulo": "Penélope",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 14\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/penelope.jpg",
+    "thumb": "img/obras/thumbs/penelope.jpg",
+    "ancho": 900,
+    "alto": 1215,
+    "detalles": []
+  },
+  {
+    "id": "simplemente-mujer",
+    "titulo": "Simplemente Mujer",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Ser Mujer",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/simplemente-mujer.jpg",
+    "thumb": "img/obras/thumbs/simplemente-mujer.jpg",
+    "ancho": 1000,
+    "alto": 1345,
+    "detalles": []
+  },
+  {
+    "id": "tahitiana",
+    "titulo": "Tahitiana",
+    "temas": [
+      "Figura Humana"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/tahitiana.jpg",
+    "thumb": "img/obras/thumbs/tahitiana.jpg",
+    "ancho": 1207,
+    "alto": 900,
+    "detalles": []
+  },
+  {
     "id": "amapola-2001",
     "titulo": "Amapola",
-    "categoria": "Óleo",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
     "medidas": "25 x 25 cm",
-    "tecnica": "Óleo",
     "ano": "2001",
-    "imagen": "img/obras/Amapola-25-x-25-Oleo-2001.jpg"
-  },
-  {
-    "id": "flores-blancas-1999",
-    "titulo": "Flores Blancas",
-    "categoria": "Óleo",
-    "medidas": "20 x 16 cm",
-    "tecnica": "Óleo",
-    "ano": "1999",
-    "imagen": "img/obras/Flores-Blancas-20-x-16-Oleo-1999.jpg"
-  },
-  {
-    "id": "bodegon-flores-2005",
-    "titulo": "Bodegón con Flores",
-    "categoria": "Óleo",
-    "medidas": "24 x 18 cm",
-    "tecnica": "Óleo",
-    "ano": "2005",
-    "imagen": "img/obras/Bodegon-con-Flores-24-x-18-Oleo-2005.jpg"
-  },
-  {
-    "id": "cachibaches-2007",
-    "titulo": "Cachibaches Lecheros",
-    "categoria": "Óleo",
-    "medidas": "24 x 20 cm",
-    "tecnica": "Óleo",
-    "ano": "2007",
-    "imagen": "img/obras/Cachibaches-Lecheros-Oleo-24-x-20-2007.jpg"
+    "disponible": null,
+    "imagen": "img/obras/amapola-2001.jpg",
+    "thumb": "img/obras/thumbs/amapola-2001.jpg",
+    "ancho": 2766,
+    "alto": 2253,
+    "detalles": []
   },
   {
     "id": "aqua-marina-2016",
     "titulo": "Aqua Marina",
-    "categoria": "Acrílico",
-    "medidas": "35.5 x 35.5 cm",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
     "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "35.5 x 35.5 cm",
     "ano": "2016",
-    "imagen": "img/obras/Aqua-Marina-Acrílico-35.5-x-35.5-2016.jpg"
+    "disponible": null,
+    "imagen": "img/obras/aqua-marina-2016.jpg",
+    "thumb": "img/obras/thumbs/aqua-marina-2016.jpg",
+    "ancho": 2343,
+    "alto": 2315,
+    "detalles": []
   },
   {
-    "id": "mercado-flotante-2009",
-    "titulo": "Mercado Flotante",
-    "categoria": "Óleo",
-    "medidas": "36 x 28 cm",
+    "id": "bodegon-flores-2005",
+    "titulo": "Bodegón con Flores",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
     "tecnica": "Óleo",
-    "ano": "2009",
-    "imagen": "img/obras/Mercado-Flotante-36-x-28-oleo-2009.jpg"
+    "grupoTecnica": "Óleo",
+    "medidas": "24 x 18 cm",
+    "ano": "2005",
+    "disponible": null,
+    "imagen": "img/obras/bodegon-flores-2005.jpg",
+    "thumb": "img/obras/thumbs/bodegon-flores-2005.jpg",
+    "ancho": 2766,
+    "alto": 2253,
+    "detalles": []
   },
   {
-    "id": "meteoro-azul-2016",
-    "titulo": "Meteoro Azul",
-    "categoria": "Óleo",
-    "medidas": "30 x 40 cm",
+    "id": "cachibaches-2007",
+    "titulo": "Cachibaches Lecheros",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
     "tecnica": "Óleo",
-    "ano": "2016",
-    "imagen": "img/obras/Meteoro-Azul-30-x-40-oleo-2016.jpg"
+    "grupoTecnica": "Óleo",
+    "medidas": "24 x 20 cm",
+    "ano": "2007",
+    "disponible": null,
+    "imagen": "img/obras/cachibaches-2007.jpg",
+    "thumb": "img/obras/thumbs/cachibaches-2007.jpg",
+    "ancho": 2726,
+    "alto": 2244,
+    "detalles": []
+  },
+  {
+    "id": "flores-blancas-1999",
+    "titulo": "Flores Blancas",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "20 x 16 cm",
+    "ano": "1999",
+    "disponible": null,
+    "imagen": "img/obras/flores-blancas-1999.jpg",
+    "thumb": "img/obras/thumbs/flores-blancas-1999.jpg",
+    "ancho": 1528,
+    "alto": 1917,
+    "detalles": []
   },
   {
     "id": "virgen-silencio-2013",
     "titulo": "La Virgen del Silencio",
-    "categoria": "Óleo",
-    "medidas": "14.5 x 18 cm",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
     "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "14.5 x 18 cm",
     "ano": "2013",
-    "imagen": "img/obras/La-Virgen-del-Silencio-Oleo-14.5-x-18-2013.jpg"
+    "disponible": null,
+    "imagen": "img/obras/virgen-silencio-2013.jpg",
+    "thumb": "img/obras/thumbs/virgen-silencio-2013.jpg",
+    "ancho": 2228,
+    "alto": 2803,
+    "detalles": []
+  },
+  {
+    "id": "laberinto",
+    "titulo": "Laberinto",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "101.6 x 76.2 cm / 40\" x 30\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/laberinto.jpg",
+    "thumb": "img/obras/thumbs/laberinto.jpg",
+    "ancho": 1280,
+    "alto": 969,
+    "detalles": []
+  },
+  {
+    "id": "laberinto-1",
+    "titulo": "Laberinto 1",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico sobre lienzo",
+    "grupoTecnica": "Acrílico",
+    "medidas": "86.36 x 86.36 cm / 34\" x 34\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/laberinto-1.jpg",
+    "thumb": "img/obras/thumbs/laberinto-1.jpg",
+    "ancho": 1280,
+    "alto": 1232,
+    "detalles": []
+  },
+  {
+    "id": "laberinto-2",
+    "titulo": "Laberinto 2",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico sobre lienzo",
+    "grupoTecnica": "Acrílico",
+    "medidas": "86.36 x 86.3 cm / 34\" x 34\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/laberinto-2.jpg",
+    "thumb": "img/obras/thumbs/laberinto-2.jpg",
+    "ancho": 1280,
+    "alto": 1262,
+    "detalles": []
+  },
+  {
+    "id": "mercado-flotante-2009",
+    "titulo": "Mercado Flotante",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "36 x 28 cm",
+    "ano": "2009",
+    "disponible": null,
+    "imagen": "img/obras/mercado-flotante-2009.jpg",
+    "thumb": "img/obras/thumbs/mercado-flotante-2009.jpg",
+    "ancho": 2039,
+    "alto": 2623,
+    "detalles": []
+  },
+  {
+    "id": "meteoro-azul-2016",
+    "titulo": "Meteoro Azul",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "30 x 40 cm",
+    "ano": "2016",
+    "disponible": null,
+    "imagen": "img/obras/meteoro-azul-2016.jpg",
+    "thumb": "img/obras/thumbs/meteoro-azul-2016.jpg",
+    "ancho": 1632,
+    "alto": 2181,
+    "detalles": []
+  },
+  {
+    "id": "rotondas-2",
+    "titulo": "Rotondas",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico sobre lienzo",
+    "grupoTecnica": "Acrílico",
+    "medidas": null,
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/rotondas-2.jpg",
+    "thumb": "img/obras/thumbs/rotondas-2.jpg",
+    "ancho": 1280,
+    "alto": 922,
+    "detalles": []
+  },
+  {
+    "id": "trozos-de-azul",
+    "titulo": "Trozos de azul",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico sobre lienzo",
+    "grupoTecnica": "Acrílico",
+    "medidas": "76.2 x 101.6 cm / 30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/trozos-de-azul.jpg",
+    "thumb": "img/obras/thumbs/trozos-de-azul.jpg",
+    "ancho": 962,
+    "alto": 1280,
+    "detalles": []
+  },
+  {
+    "id": "verano-sereno-1",
+    "titulo": "Verano sereno 1",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "76.2 x 101.6 cm / 30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/verano-sereno-1.jpg",
+    "thumb": "img/obras/thumbs/verano-sereno-1.jpg",
+    "ancho": 953,
+    "alto": 1280,
+    "detalles": []
+  },
+  {
+    "id": "verano-sereno-2",
+    "titulo": "Verano sereno 2",
+    "temas": [
+      "Otras obras"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "76.2 x 101.6 cm / 30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/verano-sereno-2.jpg",
+    "thumb": "img/obras/thumbs/verano-sereno-2.jpg",
+    "ancho": 851,
+    "alto": 1153,
+    "detalles": []
+  },
+  {
+    "id": "a-las-madres-hondurenas",
+    "titulo": "A las Madres Hondureñas",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Mixta",
+    "grupoTecnica": "Técnica Mixta",
+    "medidas": "50\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/a-las-madres-hondurenas.jpg",
+    "thumb": "img/obras/thumbs/a-las-madres-hondurenas.jpg",
+    "ancho": 900,
+    "alto": 886,
+    "detalles": []
+  },
+  {
+    "id": "calamandinas",
+    "titulo": "Calamandinas",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/calamandinas.jpg",
+    "thumb": "img/obras/thumbs/calamandinas.jpg",
+    "ancho": 1121,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "dji-agras-t30",
+    "titulo": "DJI Agras T30",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico sobre lienzo",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 30\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/dji-agras-t30.jpg",
+    "thumb": "img/obras/thumbs/dji-agras-t30.jpg",
+    "ancho": 1182,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "el-forjador",
+    "titulo": "El Forjador",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/el-forjador.jpg",
+    "thumb": "img/obras/thumbs/el-forjador.jpg",
+    "ancho": 900,
+    "alto": 1201,
+    "detalles": []
+  },
+  {
+    "id": "golden-fish",
+    "titulo": "Golden Fish",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "14\" x 17\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/golden-fish.jpg",
+    "thumb": "img/obras/thumbs/golden-fish.jpg",
+    "ancho": 1134,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "la-lectura-de-la-tarde",
+    "titulo": "La lectura de la tarde",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "18\" x 14\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/la-lectura-de-la-tarde.jpg",
+    "thumb": "img/obras/thumbs/la-lectura-de-la-tarde.jpg",
+    "ancho": 1129,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "lago-yojoa",
+    "titulo": "Lago Yojoa",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/lago-yojoa.jpg",
+    "thumb": "img/obras/thumbs/lago-yojoa.jpg",
+    "ancho": 900,
+    "alto": 1203,
+    "detalles": []
+  },
+  {
+    "id": "legado-cultural",
+    "titulo": "Legado Cultural",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico sobre Madera",
+    "grupoTecnica": "Acrílico",
+    "medidas": "50\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/legado-cultural.jpg",
+    "thumb": "img/obras/thumbs/legado-cultural.jpg",
+    "ancho": 900,
+    "alto": 900,
+    "detalles": []
+  },
+  {
+    "id": "memoria-interactiva",
+    "titulo": "Memoria Interactiva",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Montaje de copias de obra en Lona",
+    "grupoTecnica": "Técnica Mixta",
+    "medidas": "72\" x 40\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/memoria-interactiva.jpg",
+    "thumb": "img/obras/thumbs/memoria-interactiva.jpg",
+    "ancho": 1512,
+    "alto": 2560,
+    "detalles": []
+  },
+  {
+    "id": "pinas-en-el-pinal",
+    "titulo": "Piñas en el piñal",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": "Colección Privada",
+    "tecnica": "Óleo",
+    "grupoTecnica": "Óleo",
+    "medidas": "36\" x 45\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/pinas-en-el-pinal.jpg",
+    "thumb": "img/obras/thumbs/pinas-en-el-pinal.jpg",
+    "ancho": 900,
+    "alto": 672,
+    "detalles": []
+  },
+  {
+    "id": "playa-escondida",
+    "titulo": "Playa escondida",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": true,
+    "imagen": "img/obras/playa-escondida.jpg",
+    "thumb": "img/obras/thumbs/playa-escondida.jpg",
+    "ancho": 900,
+    "alto": 1210,
+    "detalles": []
+  },
+  {
+    "id": "relax-en-el-muelle",
+    "titulo": "Relax en el Muelle",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "36\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/relax-en-el-muelle.jpg",
+    "thumb": "img/obras/thumbs/relax-en-el-muelle.jpg",
+    "ancho": 893,
+    "alto": 1187,
+    "detalles": []
+  },
+  {
+    "id": "sobre-ruedas-en-amarillo",
+    "titulo": "Sobre Ruedas en Amarillo",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/sobre-ruedas-en-amarillo.jpg",
+    "thumb": "img/obras/thumbs/sobre-ruedas-en-amarillo.jpg",
+    "ancho": 900,
+    "alto": 668,
+    "detalles": []
+  },
+  {
+    "id": "sobre-ruedas-en-rojo",
+    "titulo": "Sobre Ruedas en Rojo",
+    "temas": [
+      "Varios"
+    ],
+    "coleccion": null,
+    "tecnica": "Acrílico",
+    "grupoTecnica": "Acrílico",
+    "medidas": "18\" x 24\"",
+    "ano": null,
+    "disponible": false,
+    "imagen": "img/obras/sobre-ruedas-en-rojo.jpg",
+    "thumb": "img/obras/thumbs/sobre-ruedas-en-rojo.jpg",
+    "ancho": 900,
+    "alto": 669,
+    "detalles": []
   }
 ]
