@@ -30,9 +30,24 @@
     nav a { font-size: .85rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
     nav a:hover { color: var(--accent-color); }
 
-    .hero { min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center;
-            padding: 4rem 2rem; background: var(--dark-card); color: var(--white); }
-    .hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; line-height: 1.2; }
+    /* El hero muestra "Apasionada" completa. Un cover recortaría el cuadro
+       hasta perder las amapolas, así que va contain sobre una versión
+       difuminada de sí misma, que rellena lo que sobra a los lados. */
+    .hero { position: relative; overflow: hidden; min-height: 80vh; display: flex; align-items: center;
+            justify-content: center; text-align: center; padding: 5rem 1.5rem; color: var(--white);
+            background-color: var(--dark-card); }
+    .hero::before { content: ''; position: absolute; top: -50px; right: -50px; bottom: -50px; left: -50px;
+                    background: url('img/obras/apasionada.jpg') center / cover no-repeat;
+                    filter: blur(30px) brightness(.44) saturate(.9); }
+    .hero::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+                   background: linear-gradient(rgba(26,23,21,.34), rgba(26,23,21,.58)),
+                               url('img/obras/apasionada.jpg') center / contain no-repeat; }
+    .hero > * { position: relative; z-index: 1; }
+    .hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; line-height: 1.2;
+               text-shadow: 0 2px 20px rgba(0,0,0,.6); }
+    .hero-credito { position: absolute; right: 1.4rem; bottom: 1rem; font-size: .68rem; letter-spacing: .5px;
+                    opacity: .6; text-transform: uppercase; }
+    .hero-credito a:hover { opacity: 1; text-decoration: underline; }
 
     section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
     .section-title { text-align: center; margin-bottom: 3rem; }
@@ -92,6 +107,22 @@
     .modal-nav button:hover:not(:disabled) { background: var(--accent-color); border-color: var(--accent-color); }
     .modal-nav button:disabled { opacity: .3; cursor: default; }
 
+    /* --- Biografía --- */
+    #biografia { background: var(--white); max-width: none; padding: 5rem 2rem; border-top: 1px solid var(--accent-light); }
+    .bio-wrap { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 340px 1fr; gap: 3.5rem;
+                align-items: start; }
+    .bio-foto figure { margin: 0; }
+    .bio-foto img { width: 100%; border-radius: 3px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+    .bio-foto figcaption { font-size: .74rem; color: var(--muted); margin-top: .8rem; line-height: 1.45; }
+    .bio-texto h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600;
+                    margin-bottom: .2rem; }
+    .bio-texto .bio-rol { color: var(--accent-color); font-size: .8rem; letter-spacing: 1.5px;
+                          text-transform: uppercase; margin-bottom: 1.6rem; }
+    .bio-texto p { margin-bottom: 1.1rem; font-size: .95rem; }
+    .bio-texto p.destacado { font-family: var(--font-serif); font-size: 1.35rem; font-style: italic;
+                             color: var(--accent-color); line-height: 1.45; margin: 1.8rem 0 0;
+                             padding-left: 1.2rem; border-left: 2px solid var(--accent-light); }
+
     footer { background: var(--dark-card); color: rgba(255,255,255,.65); text-align: center;
              padding: 2.5rem 2rem; font-size: .82rem; }
 
@@ -103,6 +134,10 @@
       .art-info { padding: .9rem 1rem 1.1rem; }
       .art-info h3 { font-size: 1.1rem; }
       .cat-txt h3 { font-size: 1.5rem; }
+      .hero { min-height: 72vh; padding: 3.5rem 1.2rem; }
+      #biografia { padding: 3rem 1.2rem; }
+      .bio-wrap { grid-template-columns: 1fr; gap: 2rem; }
+      .bio-foto { max-width: 280px; margin: 0 auto; }
     }
   </style>
 </head>
@@ -115,6 +150,7 @@
         <ul>
           <li><a href="#/">Galería</a></li>
           <li><a href="#/disponibles">Disponibles</a></li>
+          <li><a href="#biografia">Biografía</a></li>
         </ul>
       </nav>
     </div>
@@ -124,10 +160,40 @@
     <div>
       <h1>Arte inspirado en elegancia, armonía<br>y trazos de abstracción</h1>
     </div>
+    <p class="hero-credito"><a href="#/obra/apasionada">Apasionada · Óleo</a></p>
   </section>
 
   <section id="galeria">
     <div id="vista"><p style="text-align:center">Cargando galería…</p></div>
+  </section>
+
+  <section id="biografia">
+    <div class="bio-wrap">
+      <div class="bio-foto">
+        <figure>
+          <img src="img/suyapa.jpg" alt="Retrato de Suyapa Bandy Monterroso" loading="lazy" width="500" height="640">
+          <figcaption>Suyapa en su taller, frente a <a href="#/obra/pinas-en-el-pinal">Piñas en el piñal</a>.</figcaption>
+        </figure>
+      </div>
+      <div class="bio-texto">
+        <h2>Suyapa Bandy Monterroso</h2>
+        <p class="bio-rol">Artista plástica · San Pedro Sula, Honduras</p>
+
+        <p>Soy artista plástica, nací en la ciudad de San Pedro Sula, Honduras. Desde niña sentí inclinación por lo artístico.</p>
+
+        <p>Fue así como comencé a pintar en casa con una amiga y envolviéndome toda la energía del color y el movimiento despertó en mí una pasión por el arte.</p>
+
+        <p>Llena de muchas actividades como madre y esposa me organicé y conseguí dedicarme a la pintura, comencé a prepararme con reconocidos artistas, tanto nacionales como internacionales.</p>
+
+        <p>He participado en numerosas exposiciones colectivas entre ellas en el Banco Central de Honduras, el Centro Cultural Sampedrano, el Instituto hondureño de cultura interamericana, (IHCI) y exposiciones por la Asociación de mujeres artista de Honduras (AMAH) de la cual soy miembro activo y además ex-presidente por un periodo consecutivo de 3 años. Exposiciones en El arte y la Paz de nuestra Asociación Amah.</p>
+
+        <p>Exposiciones internacionales, en la ciudades de Cali Colombia, Quito Ecuador, y la ciudad de Panamá. Exposiciones individuales en mi país en las ciudades de Tegucigalpa, D. C. y Gracias, Lempira. He tenido oportunidades de exponer mis obras en varias exposiciones itinerantes en muchas ciudades de Honduras.</p>
+
+        <p>Manejo diferentes técnicas y temas inclinándome más hacia la figura humana, mis pinceladas son libres, me gusta trabajar con la espátula, poner textura en los lienzos, lo que me ha llevado a crear obras abstractas.</p>
+
+        <p class="destacado">Mis obras hablan de lo que llevo dentro, expresando gratos sentimientos y transmitiendo sensibilidad y emociones al espectador.</p>
+      </div>
+    </div>
   </section>
 
   <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
@@ -173,6 +239,9 @@
 
     /* ---------- rutas ---------- */
     function enrutar() {
+      // Un ancla normal (#biografia) no es una ruta: dejá que el navegador
+      // haga su scroll y no vuelvas a dibujar la galería.
+      if (location.hash && location.hash.charAt(1) !== '/') return;
       var partes = decodeURIComponent(location.hash.replace(/^#\/?/, '')).split('/');
       cerrarModal(true);
       if (partes[0] === 'obra' && partes[1]) {
