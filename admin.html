@@ -140,6 +140,10 @@
 
   var REPO   = 'suyapabandy-oss/galeria';
   var API    = 'https://api.github.com/repos/' + REPO + '/contents/';
+  // NO CAMBIAR este nombre. Es la gaveta del localStorage donde vive la llave
+  // en el teléfono de Suyapa. Podés reescribir todo lo demás de este archivo y
+  // ella sigue conectada, pero si le cambiás el nombre a esta constante, el
+  // teléfono busca en una gaveta vacía y le vuelve a pedir la llave.
   var CLAVE  = 'galeria_sm_token';
   var MAX_FULL = 1600, MAX_THUMB = 800, CALIDAD = 0.82;
 

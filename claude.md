@@ -118,6 +118,27 @@ La mitigación es acotar el daño, no esconder el token. Por eso la app pide exp
 `Contents: Read and write` y con fecha de expiración. Si se filtra, lo peor que puede pasar es
 que alguien edite la galería — no que toque el resto de la cuenta.
 
+### La llave se pide UNA sola vez
+
+La llave vive en el `localStorage` del teléfono, bajo la constante `CLAVE` de
+`admin.html`. El `localStorage` pertenece al **origen** (`suyapamonterroso.com`),
+no al archivo: podés reescribir `admin.html` entero, cambiarle el diseño o
+agregarle campos, y Suyapa sigue conectada sin hacer nada.
+
+Lo único que la desconecta:
+
+- **Renombrar la constante `CLAVE`.** El teléfono buscaría en una gaveta vacía.
+  Está marcado con un comentario en el código; respetalo.
+- Que el token expire. Por eso conviene generarlo con expiración larga.
+- Que borre la app de la pantalla de inicio y la vuelva a instalar: iOS puede
+  descartar el almacenamiento de la app al desinstalarla.
+- Que borre los datos de sitios web en el teléfono.
+
+Nota sobre iOS: instalada en la pantalla de inicio, la app **no** está sujeta al
+límite de 7 días que Safari le aplica al almacenamiento de sitios que no visitás.
+Usada como pestaña normal de Safari, sí podría perder la llave por inactividad.
+Otra razón para instalarla y usarla desde el ícono.
+
 **No cambies esto por un token clásico ni le agregues más permisos.** Si algún día hace falta
 algo más seguro, la vía correcta es un backend mínimo (una función serverless) que guarde el
 token del lado del servidor.
