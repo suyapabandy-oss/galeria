@@ -873,60 +873,6 @@
     "detalles": []
   },
   {
-    "id": "laberinto",
-    "titulo": "Laberinto",
-    "temas": [
-      "Otras obras"
-    ],
-    "coleccion": null,
-    "tecnica": "Acrílico",
-    "grupoTecnica": "Acrílico",
-    "medidas": "101.6 x 76.2 cm / 40\" x 30\"",
-    "ano": null,
-    "disponible": false,
-    "imagen": "img/obras/laberinto.jpg",
-    "thumb": "img/obras/thumbs/laberinto.jpg",
-    "ancho": 1280,
-    "alto": 969,
-    "detalles": []
-  },
-  {
-    "id": "laberinto-1",
-    "titulo": "Laberinto 1",
-    "temas": [
-      "Otras obras"
-    ],
-    "coleccion": null,
-    "tecnica": "Acrílico sobre lienzo",
-    "grupoTecnica": "Acrílico",
-    "medidas": "86.36 x 86.36 cm / 34\" x 34\"",
-    "ano": null,
-    "disponible": false,
-    "imagen": "img/obras/laberinto-1.jpg",
-    "thumb": "img/obras/thumbs/laberinto-1.jpg",
-    "ancho": 1280,
-    "alto": 1232,
-    "detalles": []
-  },
-  {
-    "id": "laberinto-2",
-    "titulo": "Laberinto 2",
-    "temas": [
-      "Otras obras"
-    ],
-    "coleccion": null,
-    "tecnica": "Acrílico sobre lienzo",
-    "grupoTecnica": "Acrílico",
-    "medidas": "86.36 x 86.3 cm / 34\" x 34\"",
-    "ano": null,
-    "disponible": false,
-    "imagen": "img/obras/laberinto-2.jpg",
-    "thumb": "img/obras/thumbs/laberinto-2.jpg",
-    "ancho": 1280,
-    "alto": 1262,
-    "detalles": []
-  },
-  {
     "id": "mercado-flotante-2009",
     "titulo": "Mercado Flotante",
     "temas": [
@@ -978,24 +924,6 @@
     "thumb": "img/obras/thumbs/rotondas-2.jpg",
     "ancho": 1280,
     "alto": 922,
-    "detalles": []
-  },
-  {
-    "id": "trozos-de-azul",
-    "titulo": "Trozos de azul",
-    "temas": [
-      "Otras obras"
-    ],
-    "coleccion": null,
-    "tecnica": "Acrílico sobre lienzo",
-    "grupoTecnica": "Acrílico",
-    "medidas": "76.2 x 101.6 cm / 30\" x 40\"",
-    "ano": null,
-    "disponible": false,
-    "imagen": "img/obras/trozos-de-azul.jpg",
-    "thumb": "img/obras/thumbs/trozos-de-azul.jpg",
-    "ancho": 962,
-    "alto": 1280,
     "detalles": []
   },
   {
@@ -1284,6 +1212,312 @@
     "thumb": "img/obras/thumbs/sobre-ruedas-en-rojo.jpg",
     "ancho": 900,
     "alto": 669,
+    "detalles": []
+  },
+  {
+    "id": "trozos-de-azul",
+    "titulo": "Trozos de azul",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": "2024",
+    "disponible": true,
+    "imagen": "img/obras/trozos-de-azul.jpg",
+    "thumb": "img/obras/thumbs/trozos-de-azul.jpg",
+    "ancho": 962,
+    "alto": 1280,
+    "detalles": []
+  },
+  {
+    "id": "laberinto-de-paz-1",
+    "titulo": "Laberinto de paz 1",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": "2024",
+    "disponible": true,
+    "imagen": "img/obras/laberinto-de-paz-1.jpg",
+    "thumb": "img/obras/thumbs/laberinto-de-paz-1.jpg",
+    "ancho": 440,
+    "alto": 328,
+    "detalles": []
+  },
+  {
+    "id": "laberinto",
+    "titulo": "Laberinto de paz 2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "40\" x 30\"",
+    "ano": "2024",
+    "disponible": true,
+    "imagen": "img/obras/laberinto.jpg",
+    "thumb": "img/obras/thumbs/laberinto.jpg",
+    "ancho": 1280,
+    "alto": 969,
+    "detalles": []
+  },
+  {
+    "id": "laberinto-2",
+    "titulo": "Territorio inexplorado 1",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "34\" x 34\"",
+    "ano": "2024",
+    "disponible": true,
+    "imagen": "img/obras/laberinto-2.jpg",
+    "thumb": "img/obras/thumbs/laberinto-2.jpg",
+    "ancho": 1280,
+    "alto": 1262,
+    "detalles": []
+  },
+  {
+    "id": "laberinto-1",
+    "titulo": "Territorio inexplorado 2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "34\" x 34\"",
+    "ano": "2024",
+    "disponible": true,
+    "imagen": "img/obras/laberinto-1.jpg",
+    "thumb": "img/obras/thumbs/laberinto-1.jpg",
+    "ancho": 1280,
+    "alto": 1232,
+    "detalles": []
+  },
+  {
+    "id": "canela",
+    "titulo": "Canela",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 36\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/canela.jpg",
+    "thumb": "img/obras/thumbs/canela.jpg",
+    "ancho": 1600,
+    "alto": 1058,
+    "detalles": []
+  },
+  {
+    "id": "nostalgia-otonal",
+    "titulo": "Nostalgia otoñal",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/nostalgia-otonal.jpg",
+    "thumb": "img/obras/thumbs/nostalgia-otonal.jpg",
+    "ancho": 1600,
+    "alto": 1198,
+    "detalles": []
+  },
+  {
+    "id": "estrato-metalico",
+    "titulo": "Estrato metálico",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 30\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/estrato-metalico.jpg",
+    "thumb": "img/obras/thumbs/estrato-metalico.jpg",
+    "ancho": 1279,
+    "alto": 1600,
+    "detalles": []
+  },
+  {
+    "id": "veleros",
+    "titulo": "Veleros",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 30\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/veleros.jpg",
+    "thumb": "img/obras/thumbs/veleros.jpg",
+    "ancho": 1267,
+    "alto": 1600,
+    "detalles": []
+  },
+  {
+    "id": "deshielo-1",
+    "titulo": "Deshielo 1",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "40\" x 40\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/deshielo-1.jpg",
+    "thumb": "img/obras/thumbs/deshielo-1.jpg",
+    "ancho": 1600,
+    "alto": 1591,
+    "detalles": []
+  },
+  {
+    "id": "deshielo-2",
+    "titulo": "Deshielo 2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "40\" x 40\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/deshielo-2.jpg",
+    "thumb": "img/obras/thumbs/deshielo-2.jpg",
+    "ancho": 1600,
+    "alto": 1596,
+    "detalles": []
+  },
+  {
+    "id": "sonata-en-caoba",
+    "titulo": "Sonata en caoba",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre lienzo",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 40\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/sonata-en-caoba.jpg",
+    "thumb": "img/obras/thumbs/sonata-en-caoba.jpg",
+    "ancho": 1190,
+    "alto": 1600,
+    "detalles": []
+  },
+  {
+    "id": "ii-caldo-ardente",
+    "titulo": "II Caldo Ardente",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "34\" x 68\" (díptico)",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/ii-caldo-ardente.jpg",
+    "thumb": "img/obras/thumbs/ii-caldo-ardente.jpg",
+    "ancho": 1600,
+    "alto": 790,
+    "detalles": []
+  },
+  {
+    "id": "sol-mayor",
+    "titulo": "Sol Mayor",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "40\" x 72\" (díptico)",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/sol-mayor.jpg",
+    "thumb": "img/obras/thumbs/sol-mayor.jpg",
+    "ancho": 1600,
+    "alto": 906,
+    "detalles": []
+  },
+  {
+    "id": "primavera-en-mi-menor",
+    "titulo": "Primavera en Mi menor",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 30\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/primavera-en-mi-menor.jpg",
+    "thumb": "img/obras/thumbs/primavera-en-mi-menor.jpg",
+    "ancho": 1280,
+    "alto": 1268,
+    "detalles": []
+  },
+  {
+    "id": "fragmentos-en-lila",
+    "titulo": "Fragmentos en lila",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "30\" x 30\"",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/fragmentos-en-lila.jpg",
+    "thumb": "img/obras/thumbs/fragmentos-en-lila.jpg",
+    "ancho": 1268,
+    "alto": 1280,
+    "detalles": []
+  },
+  {
+    "id": "allegro-1-y-2",
+    "titulo": "Allegro 1 y 2",
+    "temas": [
+      "Abstractos"
+    ],
+    "coleccion": "Las Cuatro Estaciones",
+    "tecnica": "Acrílico sobre tela",
+    "grupoTecnica": "Acrílico",
+    "medidas": "24\" x 48\" (díptico)",
+    "ano": "2026",
+    "disponible": true,
+    "imagen": "img/obras/allegro-1-y-2.jpg",
+    "thumb": "img/obras/thumbs/allegro-1-y-2.jpg",
+    "ancho": 1280,
+    "alto": 639,
     "detalles": []
   }
 ]
