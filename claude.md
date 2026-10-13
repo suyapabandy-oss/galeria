@@ -47,7 +47,7 @@ en todas las vistas.
 La cuadrícula de categorías no lleva encabezado a propósito. Antes decía
 "Colección" justo encima del bloque "Colecciones", y las dos cosas no son lo
 mismo: las categorías son temas (Abstractos, Figura Humana) y las colecciones
-son series (Ser Mujer, Miradas del Alma).
+son series (Ser Mujer, Miradas del Alma, Las Cuatro Estaciones).
 
 ### Forma de una obra en `obras.json`
 
@@ -93,9 +93,43 @@ inventando datos, solo Suyapa puede confirmarlos.
    de 2025 que se publicaron después de que el sitio viejo dejara de usar categorías.
    `rotondas-2` además no tiene medidas.
 
+### La serie "Las Cuatro Estaciones" (octubre de 2026)
+
+En octubre de 2026 se agregó la colección **Las Cuatro Estaciones** a partir del documento
+de Suyapa *Serie "Las cuatro estaciones" · Selección 2024–2026*: 17 composiciones
+(20 obras, porque tres son dípticos). El documento trae título, técnica, medidas, año y
+precio de cada una. Con eso la galería quedó en 84 obras.
+
+Lo que conviene saber antes de tocarla:
+
+- **Cuatro ya estaban en la galería**, dentro de las 7 piezas de 2025 en "Otras obras",
+  con otro nombre. Se comprobó comparando las imágenes. Se actualizó su ficha con los
+  títulos del documento (es material más reciente de ella) y se **conservaron sus `id`**,
+  para que los enlaces viejos sigan funcionando:
+
+  | `id` | Antes | Ahora |
+  |---|---|---|
+  | `trozos-de-azul` | Trozos de azul | Trozos de azul |
+  | `laberinto` | Laberinto | Laberinto de paz 2 |
+  | `laberinto-2` | Laberinto 2 | Territorio inexplorado 1 |
+  | `laberinto-1` | Laberinto 1 | Territorio inexplorado 2 |
+
+  Sus fotos también se conservaron: las del sitio tienen más resolución que las del documento.
+- **Precios**: no se publican. La galería nunca mostró precios y `obras.json` es público.
+  Que una obra tenga precio en el documento solo se tradujo en `"disponible": true`.
+- **Medidas**: se tomaron en pulgadas. En el documento, los centímetros de *Nostalgia otoñal*,
+  *Sonata en caoba* (dicen 60.9 × 91.4 cm, que son 24 × 36") y *Sol Mayor* (106.1 cm no son
+  40") no cuadran con las pulgadas. Las pulgadas sí cuadran con la proporción de las fotos.
+  En los dípticos la medida es la del conjunto y lleva "(díptico)".
+- **Categoría**: las 17 van en "Abstractos". El documento no la dice, pero no hay figura en
+  ninguna. Es la única deducción de la serie: si Suyapa prefiere otra, se cambia en `temas`.
+- *fragmentos en lila* venía en minúscula; se capitalizó como el resto de los títulos.
+- *Laberinto de paz 1* solo existe a 440 px de ancho (así venía en el documento). Se ve
+  borrosa en grande; conviene reemplazarla cuando haya una foto mejor.
+
 ## Trabajo pendiente
 
-- Que Suyapa reasigne las 15 obras que están en "Otras obras" a su categoría real.
+- Que Suyapa reasigne las 11 obras que siguen en "Otras obras" a su categoría real.
 - Que complete el año de las obras que lo tengan a mano.
 - El `admin.html` hoy permite **agregar** y **quitar** obras. Falta poder **editar** una
   obra existente (cambiarle categoría, año o disponibilidad sin borrarla y volver a subirla).
